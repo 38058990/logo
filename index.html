@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/test.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/js.js"></script>
+</head>
+<body>
+    <div class="top">
+        <div class="top-tit">
+            <div class="logo"></div>
+            <p class="city">南京<span>▼</span></p>
+            <div class="city_ h">
+                <span>合肥</span>
+                <span>芜湖</span>
+                <span>北京</span>
+                <span>深圳</span>
+                <span>广东</span>
+                <span>上海</span>
+            </div>
+            <div class="menu">
+                <div class="menu_">首页</div>
+                <div class="menu_">爱租找房</div>
+                <div class="menu_">地图找房</div>
+                <div class="menu_">爱租金融</div>
+            </div>
+            <div class="app">用户登录&nbsp;&nbsp;&nbsp;&nbsp;<span>|</span>&nbsp;&nbsp;&nbsp;&nbsp;公寓登录 &nbsp;&nbsp; <span>|</span>&nbsp;&nbsp;<span class="mobile"></span>手机爱租</div>
+        </div>
+    </div>
+    <div class="bread">您的当前位置：爱租哪 > 个人中心 > 发布房源</div>
+    <div class="content">
+        <div class="left">
+            <div class="tit"><b>账户管理</b></div>
+            <div class="list">
+                <p>个人资料</p>
+                <p>修改密码</p>
+                <p>手机修改</p>
+            </div>
+            <div class="tit"><b>我的收藏</b></div>
+            <div class="list list-f">
+                <p>收藏房源</p>
+                <p>找房条件</p>
+            </div>
+            <div class="tit"><b>我的发布</b></div>
+            <div class="list list-f">
+                <p>发布房源</p>
+                <p>已发布房源</p>
+            </div>
+        </div>
+        <div class="right">
+            <div class="tit">
+                <div class="tit-font">基本信息</div>
+            </div>
+            <div class="plot">
+                <span class="spe">*</span><span>小区名称：</span>
+                <input type="text" placeholder="请输入小区名称" class="name">
+                <span class="plot-dr"></span>
+                <input type="button" value="展开地图" class="plat">
+                <div class="shaow"></div>
+            </div>
+            <div class="area">
+                <span class="spe">*</span><span>区域板块：</span>
+                <select name="" id="" class="second">
+                     <option value="">区域</option>
+                     <option value="">玄武</option>
+                     <option value="">雨花台</option>
+                </select>
+                <select name="" id="second" class="second2">
+                     <option value="">板块</option>
+                     <option value="">栖霞</option>
+                     <option value="">白下</option>
+                </select>
+                <span class="area-dr"></span>
+            </div>
+            <div class="type">
+                <span class="spe">*</span><span>户型：</span>
+                <input type="text" class="type-input">&nbsp;室
+                <input type="text" class="type-input">&nbsp;厅
+                <input type="text" class="type-input">&nbsp;卫
+                <input type="text" class="type-input">&nbsp;阳台
+                <span class="type-dr"></span>
+            </div>
+            <div class="rent">
+                <span class="spe">*</span><span>出租形式：</span>
+                <input type="radio" name="ren" checked class="but">整租
+                <input type="radio" name="ren" class="btn">合租
+                <select name="" id="" class="ren-input">
+                     <option value="">选择卧室内容</option>
+                     <option value="">床</option>
+                     <option value="">被子</option>
+                </select>
+                <select name="" id="second" class="ren-input2">
+                     <option value="">选择限制条件</option>
+                     <option value="">空调</option>
+                     <option value="">电视</option>
+                </select>
+                <span class="rent-dr"></span>
+            </div>     
+            <div class="portion">
+                <span class="spe">*</span><span>面积：</span>
+                <div class="bor">
+                    <input type="text" placeholder="请输入面积" class="por">
+                                       平方米
+                </div>
+                <span class="portion-dr"></span>
+            </div>
+            <div class="rental">
+                <span class="spe">*</span><span>租金：</span>
+                <div class="bor">
+                    <input type="text" placeholder="请输入租金" class="ren">
+                    元/月
+                </div>
+                <span class="ren-dr"></span>
+            </div>
+            <div class="pay">
+                <span class="spe">*</span><span>付款方式：</span>
+                <input type="checkbox" class="opt">月付
+                <input type="checkbox" class="opt">季付
+                <input type="checkbox" class="opt">半年付
+                <input type="checkbox" class="opt">年付
+                <input type="checkbox" id="opt">都可以
+                <span class="dr"></span>
+            </div>
+            <div class="mobile">
+                <span class="spe">*</span><span>获取短信验证码：</span>
+                <input type="text" placeholder="请输入正确的手机号" class="num">
+                <input type="button" class="gain" value="获取验证码">
+                <span class="mobile-dr"></span>
+            </div>
+            <div class="coll">
+                <span class="spe">*</span><span>需求汇总：</span>
+                <input type="text">
+            </div>
+            <input type="button" class="sub" value="提交">
+        </div>
+    </div>
+    <div class="bot">
+        <div class="cont">
+           <div class="par">
+                <p>首页 | 爱租找房 | 地图找房 | 爱租金融 | 公司介绍     爱租哪 aizuna.house365.com</p>
+                <p>苏ICP证编号 B2-20110162 信息网络传播视听节目许可证 1009365 号</p>
+                <div class="logo"></div><p>苏公网安备 32010502010010号</p>
+            </div>
+            <div class="logo2"></div>
+        </div>
+    </div>
+</body>
+</html>
