@@ -140,7 +140,9 @@ $(function(){
         
         //判断小区名    模糊搜索
         
-        $(".name").keyup(function(){
+        
+        
+        $(".name").blur(function(){
         nums = $(".name").val();
         if(nums == ''){
             $(".plot-dr").show();
@@ -149,6 +151,9 @@ $(function(){
         }else{
             $(".plot-dr").hide();
         }
+    })
+        
+        $(".name").keyup(function(){
         query();
             
   
@@ -206,7 +211,7 @@ $(function(){
             $(".mobile-dr").text("请输入正确的手机号").show();
         }else{
             $(".gain").val("获取成功");
-            $(".mobile-dr").text("请稍等");
+            $(".mobile-dr").hide();
         }
      })
      
@@ -282,14 +287,20 @@ $(function(){
      })
      
    
-     
+     $(".sub").on("click",function(){
+        if(!$(".plot-dr").is(":hidden")){
+            $(".sub").val("提交失败");
+        }else{
+            $(".sub").val("提交成功");
+            $(".sub").css("background","yellow");
+        }
+     })
      
      
      
      $(".sub").on("click",function(){
-        nums = $(".name").val();
-        if(nums == ''){
-            $(".sub").val("提交失败").show();
+        if(!$(".plot-dr").is(":hidden")||!$(".area-dr").is(":hidden")||!$(".type-dr").is(":hidden")||!$(".rent-dr").is(":hidden")||!$(".portion-dr").is(":hidden")||!$(".ren-dr").is(":hidden")||!$(".mobile-dr").is(":hidden")){
+            $(".sub").val("提交失败");
         }else{
             $(".sub").val("提交成功");
             $(".sub").css("background","yellow");
