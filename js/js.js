@@ -202,7 +202,7 @@ $(function(){
          
      //手机验证
      
-     $(".gain").on("click",function(){
+     $(".gain,.sub").on("click",function(){
         Num = '';
         nums = $(".num").val();
         if(nums == ''){
@@ -298,9 +298,18 @@ $(function(){
      
      
      
+     
+     
+     
+     
+     
+     
+     
+     
      $(".sub").on("click",function(){
         if(!$(".plot-dr").is(":hidden")||!$(".area-dr").is(":hidden")||!$(".type-dr").is(":hidden")||!$(".rent-dr").is(":hidden")||!$(".portion-dr").is(":hidden")||!$(".ren-dr").is(":hidden")||!$(".mobile-dr").is(":hidden")){
             $(".sub").val("提交失败");
+            $(".sub").css("background","red");
         }else{
             $(".sub").val("提交成功");
             $(".sub").css("background","yellow");
