@@ -5,6 +5,7 @@
 html,body{
     height: 100%;
     font-family: 'Microsoft Yahei';
+    font-family: "iconfont";
 }
 @mixin font($value:14px){
     font-size: $value;
@@ -77,7 +78,7 @@ html,body{
     height: 56px;
     width: 1200px;
     margin: 0 auto;
-    @inclued font;
+    @include font;
     line-height: 56px;
     color: #666;
 }
@@ -117,7 +118,7 @@ html,body{
         }
     }
     .right{
-        height: 836px;
+        height: auto;
         width: 900px;
         float: right;
         .tit{
@@ -142,9 +143,19 @@ html,body{
             margin-top: 33px;
             @include font;
             line-height: 42px;
+            .ser{
+                margin-left:82px;
+                width: 400px;
+                height: auto;
+                border: 1px solid #ddd;
+                display: none;
+                line-height: 30px;
+                color: #999;
+            }
             .plot-dr{
                 font-family:"iconfont";
                 color: blue;
+                display: none;
             }
             .spe{
                 color: red;
@@ -186,6 +197,7 @@ html,body{
             .area-dr{
                 ont-family: 'iconfont';
                 color: blue;
+                display: none;
             }
             .spe{
                 color: red;
@@ -213,6 +225,7 @@ html,body{
             .type-dr{
                 font-family: 'iconfont';
                 color: blue;
+                display: none;
             }
             span{
                 color: #333;
@@ -240,6 +253,7 @@ html,body{
             .rent-dr{
                 font-family: 'iconfont';
                 color: blue;
+                display: none;
             }
             span{
                 color: #333;
@@ -273,6 +287,7 @@ html,body{
             .portion-dr{
                 font-family: 'iconfont';
                 color: blue;
+                display: none;
             }
             .spe{
                 color: red;
@@ -294,7 +309,11 @@ html,body{
                 text-indent: 13px;
                 border: 0; 
                 outline: none;
+                color: #999;
                 } 
+            }
+            span{
+                font-family:"iconfont";
             }
         }
         .rental{
@@ -307,6 +326,7 @@ html,body{
             .ren-dr{
                 font-family: 'iconfont';
                 color: blue;
+                display: none;
             }
              .spe{
                 color: red;
@@ -362,6 +382,7 @@ html,body{
             margin-left: 140px;
             border-radius: 4px;
             margin-top: 30px;
+            margin-bottom: 20px;
         }
         .mobile{
             height: 32px;
@@ -372,7 +393,8 @@ html,body{
             line-height: 42px;
             .mobile-dr{
                 font-family: 'iconfont';
-                color: blue;    
+                color: blue;
+                display: none;
             }
             .spe{
                 color: red;
@@ -407,17 +429,52 @@ html,body{
             .spe{
                 color: red;
             }
-            input{
-                height: 64px;
-                width: 422px;
+            .textarea{
+                height: 164px;
+                width: 452px;
                 border-radius: 4px;
                 font-size: 13px;
-                color: #999;
+                line-height: 20px;
+                color: #000;
                 border: 1px solid #ddd;
-                text-indent: 13px;
+                float: right;
+                overflow: scroll;
             }
         }
     }
+}
+.image{
+    height:auto;
+    width: 200px;
+    margin-left: 60px;
+    margin-top: 33px;
+    @include font;
+    line-height: 42px;
+    
+     .spe{
+        color: red;
+    }
+    .imge{
+        height: auto;
+        width: 400px;
+        margin-left: 80px;
+        display: none;
+        background: url(../images/12.jpg) no-repeat;
+        position: relative;
+        span{
+            position: absolute;
+            top: 0;
+            right: 0;
+            cursor: pointer;
+        }
+    }
+}
+.btn-im{
+    height: 30px;
+    width: 100px;
+    background: #ec6c00;
+    border-radius: 4px;
+    margin-top: 30px;
 }
 .bot{
     height: 118px;

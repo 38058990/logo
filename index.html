@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/test.css">
-    <script src="js/jquery.min.js"></script>
-    <script src="js/js.js"></script>
+    <link rel="stylesheet" href="css/test.css?ver0.3">
+    <link rel="stylesheet" href="font/iconfont.css">
 </head>
 <body>
     <div class="top">
@@ -26,7 +25,9 @@
                 <div class="menu_">地图找房</div>
                 <div class="menu_">爱租金融</div>
             </div>
-            <div class="app">用户登录&nbsp;&nbsp;&nbsp;&nbsp;<span>|</span>&nbsp;&nbsp;&nbsp;&nbsp;公寓登录 &nbsp;&nbsp; <span>|</span>&nbsp;&nbsp;<span class="mobile"></span>手机爱租</div>
+            <div class="app">用户登录&nbsp;&nbsp;&nbsp;&nbsp;
+                <span>|</span>&nbsp;&nbsp;&nbsp;&nbsp;公寓登录 &nbsp;&nbsp;
+                <span>|</span>&nbsp;&nbsp;<span class="mobile">&#xe625;</span>手机爱租</div>
         </div>
     </div>
     <div class="bread">您的当前位置：爱租哪 > 个人中心 > 发布房源</div>
@@ -56,13 +57,16 @@
             <div class="plot">
                 <span class="spe">*</span><span>小区名称：</span>
                 <input type="text" placeholder="请输入小区名称" class="name">
-                <span class="plot-dr"></span>
+                <span class="plot-dr">&#xe65b;</span>
+                <div class="ser">
+                </div>
                 <input type="button" value="展开地图" class="plat">
                 <div class="shaow"></div>
             </div>
+            
             <div class="area">
                 <span class="spe">*</span><span>区域板块：</span>
-                <select name="" id="" class="second">
+                <select name="" class="second">
                      <option value="">区域</option>
                      <option value="">玄武</option>
                      <option value="">雨花台</option>
@@ -72,31 +76,31 @@
                      <option value="">栖霞</option>
                      <option value="">白下</option>
                 </select>
-                <span class="area-dr"></span>
+                <span class="area-dr">&#xe65b;</span>
             </div>
             <div class="type">
                 <span class="spe">*</span><span>户型：</span>
-                <input type="text" class="type-input">&nbsp;室
-                <input type="text" class="type-input">&nbsp;厅
-                <input type="text" class="type-input">&nbsp;卫
-                <input type="text" class="type-input">&nbsp;阳台
-                <span class="type-dr"></span>
+                <input type="text" class="type-inputa" id="est">&nbsp;<span>室</span>
+                <input type="text" class="type-inputb" id="est">&nbsp;<span>厅</span>
+                <input type="text" class="type-inputc" id="est">&nbsp;<span>卫</span>
+                <input type="text" class="type-inputd" id="est">&nbsp;<span>阳台</span>
+                <span class="type-dr">&#xe65b;</span>
             </div>
             <div class="rent">
                 <span class="spe">*</span><span>出租形式：</span>
-                <input type="radio" name="ren" checked class="but">整租
-                <input type="radio" name="ren" class="btn">合租
-                <select name="" id="" class="ren-input">
+                <input type="radio" name="f" checked class="but"><span>整租</span>
+                <input type="radio" name="f" class="btn"><span>合租</span>
+                <select name="" id="sec" class="ren-input">
                      <option value="">选择卧室内容</option>
                      <option value="">床</option>
                      <option value="">被子</option>
                 </select>
-                <select name="" id="second" class="ren-input2">
+                <select name="" id="sec" class="ren-input2">
                      <option value="">选择限制条件</option>
                      <option value="">空调</option>
                      <option value="">电视</option>
                 </select>
-                <span class="rent-dr"></span>
+                <span class="rent-dr">&#xe65b;</span>
             </div>     
             <div class="portion">
                 <span class="spe">*</span><span>面积：</span>
@@ -104,7 +108,7 @@
                     <input type="text" placeholder="请输入面积" class="por">
                                        平方米
                 </div>
-                <span class="portion-dr"></span>
+                <span class="portion-dr">&#xe65b;</span>
             </div>
             <div class="rental">
                 <span class="spe">*</span><span>租金：</span>
@@ -112,26 +116,30 @@
                     <input type="text" placeholder="请输入租金" class="ren">
                     元/月
                 </div>
-                <span class="ren-dr"></span>
+                <span class="ren-dr">&#xe65b;</span>
             </div>
             <div class="pay">
                 <span class="spe">*</span><span>付款方式：</span>
-                <input type="checkbox" class="opt">月付
-                <input type="checkbox" class="opt">季付
-                <input type="checkbox" class="opt">半年付
-                <input type="checkbox" class="opt">年付
-                <input type="checkbox" id="opt">都可以
-                <span class="dr"></span>
+                <input type="checkbox" class="opt" name="a"><span>月付</span>
+                <input type="checkbox" class="opt" name="b"><span>季付</span>
+                <input type="checkbox" class="opt" name="c"><span>半年付</span>
+                <input type="checkbox" class="opt" name="d"><span>年付</span>
+                <input type="checkbox" id="opt" name="e"><span>都可以</span>
             </div>
             <div class="mobile">
                 <span class="spe">*</span><span>获取短信验证码：</span>
                 <input type="text" placeholder="请输入正确的手机号" class="num">
                 <input type="button" class="gain" value="获取验证码">
-                <span class="mobile-dr"></span>
+                <span class="mobile-dr">&#xe65b;</span>
+            </div>
+            <div class="image">
+                <span class="spe">*</span><span>上传图片：</span>
+                <input type="button" class="btn-im" value="+">
+                <div class="imge"><span class="lock">x</span></div>
             </div>
             <div class="coll">
                 <span class="spe">*</span><span>需求汇总：</span>
-                <input type="text">
+                <div class="textarea"></div>
             </div>
             <input type="button" class="sub" value="提交">
         </div>
@@ -148,3 +156,5 @@
     </div>
 </body>
 </html>
+<script src="js/jquery.min.js"></script>
+<script src="js/js.js"></script>
