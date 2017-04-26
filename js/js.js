@@ -67,7 +67,7 @@ $(function(){
         nums = $(".type-inputb").val();
         if(nums == ''){
             $(".type-dr").show();
-        }else if(!z.test(nums)){
+        }else if(!f.test(nums)){
             $(".type-dr").show();
         }else{
             $(".type-dr").hide();
@@ -79,7 +79,7 @@ $(function(){
         nums = $(".type-inputc").val();
         if(nums == ''){
             $(".type-dr").show();
-        }else if(!z.test(nums)){
+        }else if(!f.test(nums)){
             $(".type-dr").show();
         }else{
             $(".type-dr").hide();
@@ -90,7 +90,7 @@ $(function(){
         nums = $(".type-inputd").val();
         if(nums == ''){
             $(".type-dr").show();
-        }else if(!z.test(nums)){
+        }else if(tf.test(nums)){
             $(".type-dr").show();
         }else{
             $(".type-dr").hide();
